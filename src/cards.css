@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.card col-md-4{
+  padding: 10px;
+  margin: 2px;
+}
