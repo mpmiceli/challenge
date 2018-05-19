@@ -13,41 +13,29 @@ class Yava extends Component{
   render(){
     const cardInfo = this.state.textos.map(function(data, i){
       return(
-        <div>
-       <div>
-               <img className="card-img-top" src={data.cardPost.postImageUrl} alt="Card image cap"></img>
-               </div>
-
-
-              <div>
-              {data.cardPost.postTitle}
-              </div>
-            <div className="col-md-7">
-
-            {data.cardPost.postDescription}
-            </div>
-            <div className="col-md-5">
-            </div>
-            </div>
-    );
-    })
-
-    return(
-      <div>
-      <div className="caja">
-
-        {cardInfo}
+        <div className="row">
+        <header className="col-md-12">
+            <img className="card-img-top" src={data.cardPost.postImageUrl} alt="Card image cap"></img>
+        </header>
+        <div className="titulo">
+            {data.cardPost.postTitle}
         </div>
-
-</div>
-
-
-    );
+        <div className="col-md-7">
+            {data.cardPost.postDescription}
+        </div>
+        <div className="col-md-5">
+          </div>
+        </div>
+      );
+    })
+      return(
+        <div>
+          <div className="caja">
+            {cardInfo}
+          </div>
+        </div>
+      );
+    }
   }
-}
-
-
-
-
 
 export default Yava;

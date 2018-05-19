@@ -5,6 +5,7 @@ import Nav from './components/nav.js';
 import Side from './components/side.js';
 import Base from './components/base.js';
 import Dashboard from './components/dashboard.js';
+import Javascript from './components/javascript.js';
 
 class App extends Component{
   render(){

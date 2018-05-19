@@ -4,7 +4,7 @@
   background-color: #020202;
 }
 
-.row .App-logo {
+.row .col-md-12 .App-logo {
   width: 57px;
   height: 63px;
   margin-left: 30px;

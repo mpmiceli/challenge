@@ -1,0 +1,13 @@
+.row .col-md-12 .card-img-top{
+  width: 100%;
+  height: 300px;
+}
+
+.row .titulo{
+  width: 100%;
+  color: #000;
+}
+
+.row .col-md-7{
+  margin-top: 260px;
+}
