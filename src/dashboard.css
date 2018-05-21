@@ -1,0 +1,9 @@
+.todo .row{
+   margin-right: 0px;
+   height: 100%;
+}
+
+div .col-md-3{
+  height: 100%;
+  background-color: #000;
+}

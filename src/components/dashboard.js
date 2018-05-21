@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import Nav from './nav.js';
 import Side from './side.js';
 import Base from './base.js';
+import Javascript from './javascript.js';
+import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 
 class Dashboard extends Component{
 
@@ -28,7 +30,10 @@ class Dashboard extends Component{
             <Side showMenu={this.state.showMenu} />
           </div>
           <div className="col-md-9">
-            <Base/>
+              <Switch>
+              <Route exact path="/" component={Base}/>
+              <Route  exact path="/post/:id" component={Javascript}/>
+              </Switch>
           </div>
         </div>
       </div>

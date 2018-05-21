@@ -3,14 +3,18 @@
   padding: 0;
 
 }
-
+.cards{
+  display: flex-start | flex-end;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
 
 .card-body{
   background-color: #fff;
+  color: #000;
 }
 
-.cards{
-  margin: 15px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+.con col-md-4{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

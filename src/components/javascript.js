@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import {textos} from '../textos.json';
 import '../javascript.css';
+import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
 
 
-class Yava extends Component{
+class Javascript extends Component{
   constructor(){
     super();
     this.state={
@@ -13,19 +14,18 @@ class Yava extends Component{
   render(){
     const cardInfo = this.state.textos.map(function(data, i){
       return(
-        <div className="row">
-        <header className="col-md-12">
-            <img className="card-img-top" src={data.cardPost.postImageUrl} alt="Card image cap"></img>
-        </header>
-        <div className="titulo">
-            {data.cardPost.postTitle}
-        </div>
-        <div className="col-md-7">
-            {data.cardPost.postDescription}
-        </div>
-        <div className="col-md-5">
+          <div className="row">
+          <div class="contenedor col-md-9">
+            <img src={'http://localhost:3000/' + data.cardPost.postImageUrl}/>
+             <Link to="/"><button class="btn"  type="button">Volver</button></Link>
+            <div class="title">{data.cardPost.postTitle}</div>
           </div>
-        </div>
+          <div className="col-md-7">
+              {data.cardPost.postDescription}
+          </div>
+          <div className="col-md-5">
+          </div>
+          </div>
       );
     })
       return(
@@ -38,4 +38,4 @@ class Yava extends Component{
     }
   }
 
-export default Yava;
+export default Javascript;

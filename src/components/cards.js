@@ -14,22 +14,24 @@ class Cards extends Component{
     }
   }
   render(){
-    const dataCard = this.state.textos.map(
-      function(data, i ){
-        return(
+
+    const dataCard = this.state.textos.map(function(data, i ){
+          return(
           <div className="cont col-md-4" >
+          <div>
             <img className="card-img-top" src={data.cardImageUrl} alt="Card image cap"></img>
             <div className="card-body">
-              <p>{data.cardDescription}</p>
+            <Link to={"/post/"+data.cardTitle}><p>{data.cardDescription}</p></Link>
+            </div>
             </div>
           </div>
         );
-      }
-    )
+
+    })
 
     return(
       <div className="caja">
-        <div className="cards" >
+        <div className="cards">
           <div className="row">
             {dataCard}
           </div>
@@ -39,10 +41,6 @@ class Cards extends Component{
   }
 }
 
-const linkToDetail = () => (
-  <div>
-    <Yava/>
-  </div>
-);
+
 
 export default Cards;
