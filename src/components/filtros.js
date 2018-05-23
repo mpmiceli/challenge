@@ -8,26 +8,26 @@ class Filtros extends Component {
     this.state = {
       filtrarPor: null
     }
-    this.aplicarFiltro = this.aplicarFiltro.bind(this);
+    this.applyFilter = this.applyFilter.bind(this);
   }
 
-  aplicarFiltro = function(value) {
-    this.state.filtrarPor = value;
+  applyFilter(e) {
+    this.props.filtrar(e);
   }
 
   render() {
     return(
       <div className="bar">
         <div className="input">
-          <input type="text" className="form-control" placeholder="Search in cards" ></input>
+          <input type="text" className="form" placeholder="Search in cards" ></input>
         </div>
         <h4>Filter by</h4>
         <div className="input-group">
-            <input type="radio" name="filter-by-group" id="filterByFrontend" value="Frontend" aria-label="..." onClick={event => this.aplicarFiltro(event.target.value)} />
+            <input type="radio" name="filter-by-group" id="filterByFrontend" value="Frontend" aria-label="..." onClick={this.applyFilter} />
             <h5>Frontend</h5>
         </div>
         <div className="input-group">
-            <input type="radio" name="filter-by-group" id="filter-by-backend" value="Backend" aria-label="..." onClick={event => this.aplicarFiltro(event.target.value)} />
+            <input type="radio" name="filter-by-group" id="filter-by-backend" value="Backend" aria-label="..." onClick={this.applyFilter} />
             <h5>Backend</h5>
         </div>
       </div>

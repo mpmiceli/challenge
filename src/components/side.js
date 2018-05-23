@@ -6,9 +6,16 @@ import Filtros from './filtros.js';
 class Side extends Component{
   constructor(props){
     super(props);
-    this.state = { info }
-    this.state.techGroup;
+    this.state = {
+      info
+    };
+    this.applyFilter = this.applyFilter.bind(this);
   }
+
+  applyFilter(e) {
+      this.props.filtrar(e);
+  }
+
   render(){
     const datosPerfil = this.state.info.map(
       function(dato, i) {
@@ -27,7 +34,7 @@ class Side extends Component{
         <aside className="row">
           {datosPerfil}
           <div className="filtro">
-          <Filtros techGroup={this.state.techGroup} />
+          <Filtros filtrar={this.applyFilter} />
           </div>
         </aside>
       </div>

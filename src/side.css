@@ -17,12 +17,25 @@
 }
 .bar{
   background-color: #000;
-  padding: 70px;
+  padding: 70px
 }
 .bar .filtro {
   margin-bottom: 20px;
 }
-.bar .form-control{
+.bar .form{
+  border-top: none;
+  border-left: #000;
+  border-right: #000;
+  border-bottom-left-radius: 0;
+  border-style: #000;
+  background-color: #000;
+  margin-bottom: 40px;
+  height: 100%;
+  outline: 0px;
+  color: inherit;
+}
+
+.bar .form:focus{
   border-top: #000;
   border-left: #000;
   border-right: #000;
@@ -31,7 +44,9 @@
   background-color: #000;
   margin-bottom: 40px;
   height: 100%;
+  outline: 0px;
 }
+
 .bar .input-group{
   margin-top: 50px;
   margin-left: 5px;

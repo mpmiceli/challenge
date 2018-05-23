@@ -23,8 +23,8 @@ class Dashboard extends Component{
     this.setState({ showMenu: !this.state.showMenu });
   }
 
-  applyFilter(filter) {
-    this.setState({ filtrarPor: filter });
+  applyFilter(e) {
+    this.setState({ filtrarPor: e.target.value });
   }
 
   render() {
@@ -36,7 +36,7 @@ class Dashboard extends Component{
         </div>
         <div className="row">
           <div className="col-md-3">
-            <Side showMenu={this.state.showMenu} filtrarPor={this.state.filtrarPor} />
+            <Side showMenu={this.state.showMenu} filtrar={this.applyFilter} />
           </div>
           <div className="col-md-9">
               <Switch>

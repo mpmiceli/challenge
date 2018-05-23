@@ -16,7 +16,7 @@ class Card extends Component {
           <div>
             <img className="card-img-top" src={this.props.info.cardImageUrl} alt="Card image cap"></img>
             <div className="card-body">
-              <Link to={"/post/" + this.props.info.cardTitle}><p>{this.props.info.cardDescription}</p></Link>
+              <Link to={"/post/" + this.props.info.cardId}><p>{this.props.info.cardDescription}</p></Link>
             </div>
           </div>
         </div>
