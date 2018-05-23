@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-import Nav from './nav.js';
-import Side from './side.js';
-import Base from './base.js';
-import Javascript from './javascript.js';
 import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+
+import Base from './base.js';
+import Nav from './nav.js';
+import PostDetail from './postDetail.js';
+import Side from './side.js';
 
 class Dashboard extends Component{
 
@@ -40,8 +40,8 @@ class Dashboard extends Component{
           </div>
           <div className="col-md-9">
               <Switch>
-              <Route exact path="/" component={() => <Base filtrarPor={filtrarPor} />} />
-              <Route  exact path="/post/:id" component={Javascript}/>
+                <Route exact path="/" component={() => <Base filtrarPor={filtrarPor} />} />
+                <Route path="/post/:id" component={PostDetail} />
               </Switch>
           </div>
         </div>
