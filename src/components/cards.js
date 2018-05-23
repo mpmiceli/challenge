@@ -6,11 +6,11 @@ import Card from './card.js';
 
 class Cards extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      filtrarPor: "Frontend" // "Backend", "Frontend", null
+      filtrarPor: this.props.filtrarPor // "Backend", "Frontend", null
     }
   }
 

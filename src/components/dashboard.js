@@ -11,15 +11,24 @@ class Dashboard extends Component{
 
   constructor(props){
     super(props);
-    this.state = { showMenu: true };
+    this.state = {
+      showMenu: true,
+      filtrarPor: "Backend"
+    };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.applyFilter = this.applyFilter.bind(this);
   }
 
   toggleMenu = function(){
     this.setState({ showMenu: !this.state.showMenu });
   }
 
+  applyFilter(filter) {
+    this.setState({ filtrarPor: filter });
+  }
+
   render() {
+    let filtrarPor = this.state.filtrarPor;
     return(
       <div className="todo">
         <div className="col-md-12">
@@ -27,11 +36,11 @@ class Dashboard extends Component{
         </div>
         <div className="row">
           <div className="col-md-3">
-            <Side showMenu={this.state.showMenu} />
+            <Side showMenu={this.state.showMenu} filtrarPor={this.state.filtrarPor} />
           </div>
           <div className="col-md-9">
               <Switch>
-              <Route exact path="/" component={Base}/>
+              <Route exact path="/" component={() => <Base filtrarPor={filtrarPor} />} />
               <Route  exact path="/post/:id" component={Javascript}/>
               </Switch>
           </div>

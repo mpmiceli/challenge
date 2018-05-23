@@ -1,11 +1,22 @@
 import React, {Component} from 'react';
 import '../base.css';
-import Card from './cards.js';
+import Cards from './cards.js';
 import Javascript from './javascript.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Base extends Component{
-  render(){
+
+  constructor(props) {
+    super(props)
+
+    console.log(this.props);
+
+    this.state = {
+        filtrarPor: this.props.filtrarPor
+    }
+  }
+
+  render() {
     return(
       <Router>
         <div className="father">
@@ -13,15 +24,12 @@ class Base extends Component{
             <h2>Technologies and Languages</h2>
           </div>
           <div>
-          <Card/>
+          <Cards filtrarPor={this.state.filtrarPor} />
           </div>
         </div>
       </Router>
     )
   }
 }
-
-
-
 
 export default Base;
