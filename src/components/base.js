@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import '../base.css';
 import Cards from './cards.js';
-import Javascript from './javascript.js';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Base extends Component{

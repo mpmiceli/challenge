@@ -1,7 +1,8 @@
+import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+
 import React, { Component } from 'react';
 import {textos} from '../textos.json';
-import '../javascript.css';
-import { BrowserRouter as Router, Route, Link,Switch } from "react-router-dom";
+import '../postDetails.css';
 
 class PostDetail extends Component{
 

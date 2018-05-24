@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+
 import '../nav.css';
 import logo from '../avalith.png';
-
-import Javascript from './javascript.js';
 import Dashboard from './dashboard.js';
 
 class Nav extends Component{
