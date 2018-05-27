@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     justify-content:center;
     background-color: #cfcbd6;
+    width: 1366px;
+    height: 768px;
   }
 .father .titulo{
   margin-left: 0;

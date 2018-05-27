@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../side.css';
 import {info} from '../textos.json';
 import Filtros from './filtros.js';
+import SearchBar from './searchBar.js';
 
 class Side extends Component{
   constructor(props){
@@ -10,10 +11,15 @@ class Side extends Component{
       info
     };
     this.applyFilter = this.applyFilter.bind(this);
+    this.applyFilterSearch = this.applyFilterSearch.bind(this);
   }
 
   applyFilter(e) {
       this.props.filtrar(e);
+  }
+
+  applyFilterSearch(e) {
+      this.props.filtrarXbusqueda(e);
   }
 
   render(){
@@ -34,7 +40,8 @@ class Side extends Component{
         <aside className="row">
           {datosPerfil}
           <div className="filtro">
-          <Filtros filtrar={this.applyFilter} />
+          <SearchBar filtrarXbusqueda={this.applyFilterSearch} />
+          <Filtros filtrar={this.applyFilter}  />
           </div>
         </aside>
       </div>

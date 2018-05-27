@@ -15,13 +15,11 @@ class Filtros extends Component {
     this.props.filtrar(e);
   }
 
+
   render() {
     return(
       <div className="bar">
-        <div className="input">
-          <input type="text" className="form" placeholder="Search in cards" ></input>
-        </div>
-        <h4>Filter by</h4>
+        <h5>Filter by</h5>
         <div className="input-group">
             <input type="radio" name="filter-by-group" id="filterByFrontend" value="Frontend" aria-label="..." onClick={this.applyFilter} />
             <h5>Frontend</h5>

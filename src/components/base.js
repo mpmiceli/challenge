@@ -7,11 +7,9 @@ class Base extends Component{
 
   constructor(props) {
     super(props)
-
-    console.log(this.props);
-
     this.state = {
-        filtrarPor: this.props.filtrarPor
+        filtrarPor: this.props.filtrarPor,
+        filtrarPorBusqueda: this.props.filtrarPorBusqueda
     }
   }
 
@@ -23,7 +21,7 @@ class Base extends Component{
             <h2>Technologies and Languages</h2>
           </div>
           <div>
-          <Cards filtrarPor={this.state.filtrarPor} />
+          <Cards filtrarPor={this.state.filtrarPor} filtrarPorBusqueda={this.state.filtrarPorBusqueda} />
           </div>
         </div>
       </Router>

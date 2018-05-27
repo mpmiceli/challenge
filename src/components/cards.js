@@ -10,15 +10,17 @@ class Cards extends Component {
     super(props);
 
     this.state = {
-      filtrarPor: this.props.filtrarPor // "Backend", "Frontend", null
+      filtrarPor: this.props.filtrarPor,
+      filtrarPorBusqueda: this.props.filtrarPorBusqueda
     }
   }
 
   render(){
     let filtrarPor = this.state.filtrarPor;
+    let filtrarPorBusqueda = this.state.filtrarPorBusqueda;
     const cards = textos.map(function(data, i ){
       return (
-        <Card info={data} filtrarPor={filtrarPor} />
+        <Card info={data} filtrarPor={filtrarPor} filtrarPorBusqueda={filtrarPorBusqueda} />
       );
     })
 

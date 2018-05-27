@@ -13,10 +13,12 @@ class Dashboard extends Component{
     super(props);
     this.state = {
       showMenu: true,
-      filtrarPor: "Backend"
+      filtrarPor: null,
+      filtrarPorBusqueda: null
     };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.applyFilter = this.applyFilter.bind(this);
+    this.applyFilterSearch = this.applyFilterSearch.bind(this);
   }
 
   toggleMenu = function(){
@@ -27,8 +29,13 @@ class Dashboard extends Component{
     this.setState({ filtrarPor: e.target.value });
   }
 
+  applyFilterSearch(e) {
+    this.setState({ filtrarPorBusqueda: e.target.value});
+  }
+
   render() {
     let filtrarPor = this.state.filtrarPor;
+    let filtrarPorBusqueda = this.state.filtrarPorBusqueda;
     return(
       <div className="todo">
         <div className="col-md-12">
@@ -36,11 +43,11 @@ class Dashboard extends Component{
         </div>
         <div className="row">
           <div className="col-md-3">
-            <Side showMenu={this.state.showMenu} filtrar={this.applyFilter} />
+            <Side showMenu={this.state.showMenu} filtrarXbusqueda={this.applyFilterSearch} filtrar={this.applyFilter} />
           </div>
           <div className="col-md-9">
               <Switch>
-                <Route exact path="/" component={() => <Base filtrarPor={filtrarPor} />} />
+                <Route exact path="/" component={() => <Base filtrarPor={filtrarPor} filtrarPorBusqueda={filtrarPorBusqueda} />} />
                 <Route path="/post/:id" component={PostDetail} />
               </Switch>
           </div>
