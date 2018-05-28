@@ -18,9 +18,8 @@
   height: 150px;
 }
 .box h3, h4 {
+  margin-top: 10px;
   text-align: center;
-  margin-left: 20px;
-  margin-top: 15px;
   color: #f3f3f3;
 }
 .bar{

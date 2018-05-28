@@ -10,8 +10,7 @@ class Nav extends Component{
       <div className="row">
         <header className="col-md-12">
           <a href="#" onClick={this.props.toggleMenu}>
-            <img src={logo} className="App-logo" alt="logo" width="57"
-            height="63" />
+            <img src={logo} className="App-logo" alt="logo"/>
           </a>
         </header>
       </div>
