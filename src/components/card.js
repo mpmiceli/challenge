@@ -30,10 +30,12 @@ class Card extends Component {
       return (
         <div className="cont col-md-4" >
           <div>
-            <img className="card-img-top" src={this.props.info.cardImageUrl} alt="Card image cap"></img>
-            <div className="card-body">
-              <Link to={"/"+ "post/" + this.props.info.cardId}><p>{this.props.info.cardDescription}</p></Link>
-            </div>
+            <Link to={"/"+ "post/" + this.props.info.cardId}>
+              <img className="card-img-top" src={this.props.info.cardImageUrl} alt="Card image cap"></img>
+              <div className="card-body">
+                <p>{this.props.info.cardDescription}</p>
+              </div>
+            </Link>
           </div>
         </div>
       )
