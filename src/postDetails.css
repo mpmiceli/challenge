@@ -1,9 +1,11 @@
-.row .contenedor{
+.row .contenedor .img{
     position: relative;
     display: inline-block;
     text-align: center;
     margin: 0;
     position: relative;
+    width: 100%;
+    height: 500px;
 }
 
 .row .btn{
@@ -52,10 +54,5 @@
 
 .row .col-md-5{
   background-color: #fff;
-}
-
-.javascript {
-
-
-
+  padding-top: 60px;
 }

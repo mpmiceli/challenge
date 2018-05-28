@@ -9,7 +9,7 @@ class Card extends Component {
 
   applyFiltroPorBusqueda() {
     let filtrarPorBusqueda = this.props.filtrarPorBusqueda;
-    if (!filtrarPorBusqueda || this.props.info.cardTitle.includes(filtrarPorBusqueda)) {
+    if (!filtrarPorBusqueda || this.props.info.cardTitle.toLowerCase().includes(filtrarPorBusqueda.toLowerCase())) {
       return true;
     }
     return false;

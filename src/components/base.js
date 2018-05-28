@@ -18,7 +18,7 @@ class Base extends Component{
       <Router>
         <div className="father">
           <div className="titulo">
-            <h2>Technologies and Languages</h2>
+            <h2>LANGUAGES & TECHNOLOGIES</h2>
           </div>
           <div>
           <Cards filtrarPor={this.state.filtrarPor} filtrarPorBusqueda={this.state.filtrarPorBusqueda} />

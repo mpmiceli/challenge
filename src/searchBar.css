@@ -1,6 +1,7 @@
 .input{
   background-color: #000;
-  padding: 70px
+  padding: 70px;
+  color: #f3f3f3;
 }
 
 .input .form{
@@ -13,7 +14,7 @@
   margin-bottom: 20px;
   height: 100%;
   outline: 0px;
-  color: inherit;
+  color: #f3f3f3;
 }
 
  .input .form:focus{

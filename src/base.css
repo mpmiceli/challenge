@@ -1,13 +1,15 @@
+
 .father {
     display: flex;
     flex-direction:row-reverse;
     flex-wrap: wrap;
     justify-content:center;
     background-color: #cfcbd6;
-    width: 1366px;
-    height: 768px;
+    width: 100%;
+    height: 1300px;
+    padding: 10px;
   }
 .father .titulo{
-  margin-left: 0;
-  text-align: left;
+  margin-right: 470px;
+  margin-top: 10px;
 }

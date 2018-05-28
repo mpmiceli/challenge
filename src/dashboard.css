@@ -1,9 +1,8 @@
 .todo .row{
-   margin-right: 0px;
+   margin-right: 0 !important;
    height: 100%;
 }
 
 div .col-md-3{
   height: 100%;
-  background-color: #000;
 }

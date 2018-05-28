@@ -12,7 +12,7 @@ class SearchBar extends Component {
   }
 
   applyFilterSearch(e) {
-    this.props.filtrarXbusqueda(e);
+    this.props.filtrarXbusqueda(e)
   }
 
   render() {

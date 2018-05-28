@@ -36,16 +36,17 @@ class Dashboard extends Component{
   render() {
     let filtrarPor = this.state.filtrarPor;
     let filtrarPorBusqueda = this.state.filtrarPorBusqueda;
-    return(
+
+    let result = (
       <div className="todo">
-        <div className="col-md-12">
+        <div className="navBar">
           <Nav toggleMenu={this.toggleMenu} />
         </div>
         <div className="row">
           <div className="col-md-3">
             <Side showMenu={this.state.showMenu} filtrarXbusqueda={this.applyFilterSearch} filtrar={this.applyFilter} />
           </div>
-          <div className="col-md-9">
+          <div className={this.state.showMenu ? "col-md-9" : "col-md-12"}>
               <Switch>
                 <Route exact path="/" component={() => <Base filtrarPor={filtrarPor} filtrarPorBusqueda={filtrarPorBusqueda} />} />
                 <Route path="/post/:id" component={PostDetail} />
@@ -54,6 +55,8 @@ class Dashboard extends Component{
         </div>
       </div>
     )
+
+    return result;
   }
 }
 
