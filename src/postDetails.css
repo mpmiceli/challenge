@@ -15,8 +15,8 @@
 
 .row .title{
     position: absolute;
-    top: 50%;
-    left: 60%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     width: 212px;
 

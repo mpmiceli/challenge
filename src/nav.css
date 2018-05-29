@@ -1,6 +1,6 @@
 .row .col-md-12 {
   background-color: #020202;
-  width: z;
+  width: 100%;
   height: 60px;
 }
 
@@ -8,5 +8,5 @@
 
   margin-left: 30px;
   margin-bottom: 10px;
-  margin-top: 2px;
+  margin-top: 8px;
 }
