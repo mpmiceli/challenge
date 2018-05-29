@@ -15,13 +15,14 @@ class Base extends Component{
 
   render() {
     return(
+
       <Router>
         <div className="father">
-          <div className="titulo">
-            <h2>LANGUAGES & TECHNOLOGIES</h2>
-          </div>
+        <div className="titulo">
+          <h2>LANGUAGES & TECHNOLOGIES</h2>
+        </div>
           <div>
-          <Cards filtrarPor={this.state.filtrarPor} filtrarPorBusqueda={this.state.filtrarPorBusqueda} />
+            <Cards filtrarPor={this.state.filtrarPor} filtrarPorBusqueda={this.state.filtrarPorBusqueda} />
           </div>
         </div>
       </Router>

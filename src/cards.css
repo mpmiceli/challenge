@@ -4,9 +4,10 @@
 
 }
 .cards{
-  display: flex-start | flex-end;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: space-around;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .card-body{
