@@ -1,7 +1,7 @@
 .row .contenedor .img{
     position: relative;
     margin: 0;
-    width: 100%;
+    width: 100% !important;
 }
 
 .row .btn{
@@ -39,7 +39,7 @@
     color: #ffffff;
 }
 
-.row .col-md-9{
+.row .contenedor{
   margin: 0;
   padding: 0;
 }

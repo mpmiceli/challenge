@@ -22,7 +22,7 @@ class PostDetail extends Component{
         return (
           <div className="caja">
             <div className="row">
-              <div class="contenedor col-md-9">
+              <div class="contenedor">
                 <img src={'http://localhost:3000/' + data.cardPost.postImageUrl}/>
                 <Link to="/"><button class="btn"  type="button">Go back</button></Link>
                 <div class="title">{data.cardPost.postTitle}</div>
