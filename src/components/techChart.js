@@ -15,15 +15,15 @@ class TechChart extends Component{
           label: '# of Votes',
           "data": this.props.data,
           backgroundColor: [
-            "#e36588",
-            "#99edcc",
-            "#9ac4f8"
+            "#ff9914",
+            "#f21b3f",
+            "#08bdbd"
           ]
         }
       ]
     };
 
-    let options = {responsive: true, maintainAspectRatio: false}
+    let options = {responsive: true, maintainAspectRatio: true}
     return (
         <Doughnut data={doughnutData} options={options} />
     )

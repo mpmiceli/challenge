@@ -52,10 +52,36 @@
   height: 388px;
 }
 
+.caja .row .col-md-5 .h4{
+
+  width: 214px;
+
+  height: 20px;
+
+  font-family: Roboto;
+
+  font-size: 20px;
+
+  font-weight: 300;
+
+  font-style: normal;
+
+  font-stretch: normal;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.2px;
+
+  text-align: left;
+
+  color: #000 !important;
+
+}
 
 
 
 .row .col-md-5{
   background-color: #fff;
-  padding-top: 60px;
+  padding-top: 20px;
+  color: #000;
 }

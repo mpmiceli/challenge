@@ -31,7 +31,8 @@ class PostDetail extends Component{
                 {data.cardPost.postDescription}
               </div>
               <div className="col-md-5">
-              <TechChart data={data.cardGraph.data} />
+                <h4>{data.cardPost.postTitle}</h4>
+                <TechChart data={data.cardGraph.data} />
               </div>
             </div>
           </div>
