@@ -1,6 +1,9 @@
-*{
+.todo{
   height: 100%;
+  overflow: scroll;
 }
+
+
 .todo .row{
    margin-right: 0 !important;
    height: 100%;

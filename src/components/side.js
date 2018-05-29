@@ -44,8 +44,7 @@ class Side extends Component{
           <Filtros filtrar={this.applyFilter}  />
           </div>
         </aside>
-        <div className="row2">
-        </div>
+        
       </div>
     )
   }
