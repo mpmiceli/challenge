@@ -10,14 +10,14 @@ class Card extends Component {
 
   applyFiltroPorBusqueda() {
     let filtrarPorBusqueda = this.props.filtrarPorBusqueda;
-    if (!filtrarPorBusqueda || this.props.info.cardTitle.toLowerCase().includes(filtrarPorBusqueda.toLowerCase())) {
+    if (!filtrarPorBusqueda || this.props.info.cardTitle.toLowerCase().includes(filtrarPorBusqueda.toLowerCase()) || this.props.info.cardPost.postDescription.toLowerCase().includes(filtrarPorBusqueda.toLowerCase())) {
       return true;
     }
     return false;
   }
 
   applyFiltroPorTecnologia() {
-    let filtrarPor = this.props.filtrarPor; // "Backend", "Frontend", null
+    let filtrarPor = this.props.filtrarPor; 
     if (!filtrarPor || this.props.info.cardTechnology.includes(filtrarPor)) {
       return true;
     }
