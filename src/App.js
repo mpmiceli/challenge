@@ -11,7 +11,7 @@ import Dashboard from './components/dashboard.js';
 class App extends Component{
   render(){
     return(
-        <Dashboard />
+        <Dashboard/>
     )
   }
 }

@@ -5,9 +5,6 @@ class Filtros extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      filtrarPor: null
-    }
     this.applyFilter = this.applyFilter.bind(this);
   }
 
