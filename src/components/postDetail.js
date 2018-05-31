@@ -25,7 +25,7 @@ class PostDetail extends Component{
               <div class="contenedor">
                 <img src={'http://localhost:3000/' + data.cardPost.postImageUrl}/>
                 <Link to="/"><button class="btn"  type="button">Go back</button></Link>
-                <div class="title">{data.cardPost.postTitle}</div>
+                
               </div>
               <div className="col-md-7">
                 {data.cardPost.postDescription}

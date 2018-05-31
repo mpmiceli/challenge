@@ -1,4 +1,10 @@
 
 .card-body{
+  background-color: #fff;
+  color: #000;
+}
+
+.card-body .p{
+  background-color: #fff !important;
   color: #000;
 }

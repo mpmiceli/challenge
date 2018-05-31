@@ -1,10 +1,10 @@
 .row .contenedor .img{
     position: relative;
     margin: 0;
-    width: 900px;
+    width: 100%;
 }
 
-.row .btn{
+.row .contenedor .btn{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -52,7 +52,7 @@
   height: 388px;
 }
 
-.caja .row .col-md-5 .h4{
+.caja .row .col-md-5 h4{
 
   width: 214px;
 
@@ -70,18 +70,10 @@
 
   line-height: 1.8;
 
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 
   text-align: left;
 
   color: #000 !important;
 
-}
-
-
-
-.row .col-md-5{
-  background-color: #fff;
-  padding-top: 20px;
-  color: #000;
 }

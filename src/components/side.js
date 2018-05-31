@@ -36,15 +36,15 @@ class Side extends Component{
     )
     return (
       this.props.showMenu &&
-      <div className="contenedor">
-        <aside className="row">
+      <div className="side">
+        <aside>
           {datosPerfil}
-          <div className="filtro">
+          <div className="elementos">
           <SearchBar filtrarXbusqueda={this.applyFilterSearch} />
           <Filtros filtrar={this.applyFilter}  />
           </div>
         </aside>
-        
+
       </div>
     )
   }

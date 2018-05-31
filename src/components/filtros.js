@@ -15,7 +15,7 @@ class Filtros extends Component {
 
   render() {
     return(
-      <div className="bar">
+      <div >
         <h5>Filter by</h5>
         <div className="input-group">
             <input type="radio" name="filter-by-group" id="filterByFrontend" value="Frontend" aria-label="..." onClick={this.applyFilter} />

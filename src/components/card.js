@@ -17,7 +17,7 @@ class Card extends Component {
   }
 
   applyFiltroPorTecnologia() {
-    let filtrarPor = this.props.filtrarPor; 
+    let filtrarPor = this.props.filtrarPor;
     if (!filtrarPor || this.props.info.cardTechnology.includes(filtrarPor)) {
       return true;
     }
@@ -28,7 +28,7 @@ class Card extends Component {
 
     if (this.applyFiltroPorBusqueda() && this.applyFiltroPorTecnologia()) {
       return (
-        <div className="cont col-md-4 col-s-6" >
+        <div className="cont col-md-4" >
           <div>
             <Link to={"/"+ "post/" + this.props.info.cardId}>
               <img className="card-img-top" src={this.props.info.cardImageUrl} alt="Card image cap"></img>
